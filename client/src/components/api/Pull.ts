@@ -14,3 +14,13 @@ type PullList = z.infer<typeof PullListSchema>
 export async function getPulls(): Promise<PullList> {
     return fetch("api/pulls").then(validateResponse).then(response=>response.json()).then(data=>PullListSchema.parse(data));
 }
+
+export async function createPull(title: string, text: string): Promise<void> {
+    return fetch("api/pulls",{
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({title,text}),
+    }).then(validateResponse).then(()=>undefined);
+}

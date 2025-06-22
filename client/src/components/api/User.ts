@@ -65,3 +65,9 @@ export async function getUser(id: string): Promise<User> {
     .then((response) => response.json())
     .then((data) => UserSchema.parse(data));
 }
+
+export async function logOutUser(): Promise<void> {
+    return fetch("api/users/me",{
+        method: "POST",
+    }).then(validateResponse).then(()=>undefined);
+}
