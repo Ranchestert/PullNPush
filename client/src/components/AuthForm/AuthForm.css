@@ -1,0 +1,31 @@
+.authForm {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 60%;
+
+}
+
+.authForm * {
+    margin: 0;
+}
+
+.authForm__toggle {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-self: center;
+}
+
+.authForm__toggle__anchor{
+    text-decoration: none;
+    color: blue;
+    transition: color .5s;
+}
+.authForm__toggle__anchor:hover{
+    color: rgb(74, 27, 74);
+}
+
+.authForm *:nth-child(1){
+    align-self: center;
+}
