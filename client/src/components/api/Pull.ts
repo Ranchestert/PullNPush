@@ -7,6 +7,7 @@ const PullSchema = z.object({
     authorId: z.string(),
     createdAt: z.number()
 });
+export type Pull = z.infer<typeof PullSchema>
 
 const PullListSchema = z.array(PullSchema);
 type PullList = z.infer<typeof PullListSchema>

@@ -1,0 +1,28 @@
+.pull{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: #adb4ff;
+    width: 60%;
+    padding: 1% 2%;
+    border-radius: 12px;
+}
+
+.pull__main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.pull__main__title{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+}
+.pull__main__text{
+    font-weight: 500;
+    color: #ffffff;
+}
+.pull__date{
+    color: #ffffff;
+}
