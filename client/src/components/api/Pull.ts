@@ -2,6 +2,7 @@ import { z } from "zod";
 import { validateResponse } from "./validateResponse";
 
 const PullSchema = z.object({
+    id: z.string(),
     title: z.string(),
     text: z.string(),
     authorId: z.string(),
