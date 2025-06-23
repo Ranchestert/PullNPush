@@ -1,0 +1,20 @@
+.pull-node{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    padding: 20px 40px;
+}
+.pull-node__user{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.pull-node__user__tg{
+    text-decoration: none;
+    color: blue;
+    transition: color .5s;
+}
+.pull-node__user__tg:hover{
+    color: rgb(74, 27, 74);
+}

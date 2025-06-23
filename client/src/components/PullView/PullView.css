@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
     gap: 2px;
-    background-color: #adb4ff;
     width: 60%;
     padding: 1% 2%;
+    border: 2px solid #adb4ff;
     border-radius: 12px;
 }
 
@@ -17,12 +17,12 @@
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    color: #ffffff;
+    color: #10132a;
 }
 .pull__main__text{
     font-weight: 500;
-    color: #ffffff;
+    color: #10132a;
 }
 .pull__date{
-    color: #ffffff;
+    color: #10132a;
 }
