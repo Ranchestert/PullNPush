@@ -6,7 +6,10 @@ import { queryClient } from "../api/QueryClient";
 
 export const LogoutButton = (): ReactElement => {
     const logoutMutate = useMutation({
-        mutationFn: ()=>logOutUser()
+        mutationFn: ()=>logOutUser(),
+        onSuccess: ()=>{
+            queryClient.invalidateQueries({queryKey:["users","me"]});
+        }
     },queryClient);
 
     const handleClick = () => {

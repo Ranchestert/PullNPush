@@ -20,7 +20,10 @@ export const PullForm = (): ReactElement => {
         resolver: zodResolver(FormInputSchema)
     });
     const pullCreateMutation = useMutation({
-        mutationFn: ({title,text}:FormInputType)=>createPull(title,text)
+        mutationFn: ({title,text}:FormInputType)=>createPull(title,text),
+        onSuccess: ()=>{
+            queryClient.invalidateQueries({queryKey:["get","posts"]})
+        }
     },queryClient);
 
     return (

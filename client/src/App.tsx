@@ -1,9 +1,9 @@
-import { PullPage } from "./components/PullPage/PullPage"
+import { LoginToggler } from "./components/LoginToggler/LoginToggler"
 
 function App() {
   return (
     <>
-      <PullPage />
+      <LoginToggler />
     </>
   )
 }
