@@ -16,12 +16,13 @@ const FormInputSchema = z.object({
 type FormInputType = z.infer<typeof FormInputSchema>
 
 export const PullForm = (): ReactElement => {
-    const {register,handleSubmit,formState:{errors}} = useForm<FormInputType>({
+    const {register,reset,handleSubmit,formState:{errors}} = useForm<FormInputType>({
         resolver: zodResolver(FormInputSchema)
     });
     const pullCreateMutation = useMutation({
         mutationFn: ({title,text}:FormInputType)=>createPull(title,text),
         onSuccess: ()=>{
+            reset();
             queryClient.invalidateQueries({queryKey:["get","posts"]})
         }
     },queryClient);
