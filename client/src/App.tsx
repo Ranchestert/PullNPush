@@ -1,9 +1,9 @@
-import { PullForm } from "./components/PullForm/PullForm"
+import { PullPage } from "./components/PullPage/PullPage"
 
 function App() {
   return (
     <>
-      <PullForm />
+      <PullPage />
     </>
   )
 }

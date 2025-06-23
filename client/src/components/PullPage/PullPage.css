@@ -1,0 +1,15 @@
+.pull-page{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 80px;
+    padding: 20px 40px 20px 80px;
+}
+.pull-page__logout{
+    position: absolute;
+    top: 2%;
+    left: 90%;
+}
+.pull-page__list{
+    width: 70%;
+}

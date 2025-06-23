@@ -22,10 +22,12 @@
 }
 
 .button[data-kind="secondary"] {
-  background-color: var(--secondary);
+  background-color: white;
+  border: 3px solid var(--secondary);
+  color: var(--secondary);
 }
 .button[data-kind="secondary"]:hover {
-  background-color: var(--secondary-hover);
+  border-color: var(--secondary-hover);
 }
 
 .button .loader-circle {
